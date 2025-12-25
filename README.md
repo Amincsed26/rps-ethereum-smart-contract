@@ -1,4 +1,4 @@
-# 🪨📄✂️ Rock Paper Scissors – Ethereum Smart Contract
+# Rock Paper Scissors – Ethereum Smart Contract
 
 A decentralized **Rock Paper Scissors** game implemented as an **Ethereum smart contract** using **Solidity**.  
 The game follows a **commit–reveal scheme** to ensure fairness and prevent cheating, with rewards distributed automatically on-chain.
