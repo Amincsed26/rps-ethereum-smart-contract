@@ -1,29 +1,4 @@
 // SPDX-License-Identifier: GPL-3.0
-/**
-I acknowledge that I am aware of the academic integrity guidelines of this course, 
-and that I worked on this assignment independently without any unauthorized help
-امين محمد امين السيد
-*/
-
-/**
-==========================================================
-==========================================================
-======================= More Assumption ==================
-==========================================================
-==========================================================
-1. The hash of the move was generated in Remix IDE's terminal using:
-web3.utils.soliditySha3(
-  { type: 'uint8', value: 0 },
-  { type: 'string', value: "secret" }
-)
-and then submitted in the commit phase.
-
-2. Timeout function design:
-- If claimTimeout is restricted to participants only, the reward can be locked
-  forever if both participants didn't call it.
-- If claimTimeout is restricted to the manager, it will introduce a bottleneck.
-- Therefore, claimTimeout is left open for anyone to call.
-*/
 pragma solidity ^0.8.4;
 contract RockPaperScissors {
     // addresses of manager and the two participants.
@@ -171,4 +146,5 @@ contract RockPaperScissors {
             emit RewardDistributed(manager, reward);
         }
     }
+
 }
